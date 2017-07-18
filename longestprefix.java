@@ -8,14 +8,16 @@ public class longestprefix {
 		Scanner sc=new Scanner(System.in);
 		int s=sc.nextInt();
 		String s1[]=new String[100];
-		String s2="";
-		String chk;
+		/*String s2="";
+		String chk;*/
 		for(int i=0;i<s;i++)
 		{
 			s1[i]=sc.next();
 		}
+		String s2="";
+		Strin chk;
 		if(s1.length>0)
-		{
+		
 			s2=s1[0];
 			for(int i=1;i<s1.length;i++)
 			{
@@ -26,13 +28,12 @@ public class longestprefix {
 					{
 						break;
 					}
-					s2=s1[i].substring(0,j);
-					System.out.print(s2);
 				}
+					s2=s1[i].substring(0,j);
+				
 			}
-		}
+					System.out.print(s2);
 		
-
 	}
 
 }
